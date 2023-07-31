@@ -1,0 +1,319 @@
+@media (max-width:1438px) {
+  .global {
+    /* width: 1024px; */
+    width: 100%;
+  }
+
+  .header {
+    justify-content: space-between;
+    padding: 25px 43px;
+  }
+
+  .header-nav__list-item {
+    margin-right: 30px;
+  }
+
+  .registration__sign-in-button {
+    margin-right: 25px;
+  }
+
+  .get-started {
+    padding: 70px 43px;
+    background-size: 450px;
+    background-position: right 40px top 80px;
+  }
+
+  .get-started__text {
+    max-width: 500px;
+  }
+
+  .achievement {
+    padding: 40px;
+  }
+
+  .achievement__items {
+    padding: 55px;
+  }
+
+  .info {
+    padding: 100px 40px;
+    background-position: bottom 5px left 0;
+    margin-bottom: 0;
+  }
+
+  .info__block {
+    max-width: 415px;
+  }
+
+  .offer {
+    margin-bottom: 100px;
+  }
+
+  .some-plan {
+    padding: 70px 46px 43px;
+  }
+
+  .map__brands-item {
+    margin: 0 10px;
+  }
+
+  .feedback__comments {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .subscribe {
+    margin: 0 auto 65px;
+  }
+
+  .footer {
+    padding: 0 40px;
+    justify-content: space-between;
+  }
+
+  .footer-info {
+    margin-right: 0px;
+  }
+
+  .footer-nav__list {
+    margin-right: 60px;
+  }
+
+  .footer-nav__list:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width:1024px) {
+  .menu__button {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 38px;
+    height: 38px;
+    z-index: 2;
+  }
+
+  .menu__button>span,
+  .menu__button>span:before,
+  .menu__button>span:after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 5px;
+  }
+
+  .menu__button>span:before {
+    content: "";
+    top: 10px;
+  }
+
+  .menu__button>span::after {
+    content: "";
+    top: 20px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header__registration {
+    display: none;
+  }
+
+  #menu:checked~.header>.header-nav {
+    display: block;
+  }
+
+  #menu:checked~.header>.header__registration {
+    display: block;
+  }
+
+  #menu:checked~.header {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    background-color: #c9c9c9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  #menu:checked~.header>.header-nav>.header-nav__list {
+    flex-direction: column;
+    font-size: 35px;
+  }
+
+  #menu:checked~.header>.header-nav>.header-nav__list {
+    flex-direction: column;
+    font-size: 35px;
+  }
+
+  #menu:checked~.header>.header-nav>.header-nav__list>.header-nav__list-item {
+    margin-bottom: 20px;
+  }
+
+  #menu:checked~.menu__button>span {
+    top: 10px;
+    transform: rotate(45deg);
+  }
+
+  #menu:checked~.menu__button>span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu:checked~.menu__button>span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  /* main */
+
+  /* achievement */
+
+  .get-started {
+    background: none;
+  }
+
+  .achievement__item_with-diveder {
+    align-items: center;
+  }
+
+  .achievement__title {
+    font-size: 20px;
+  }
+
+  .achievement__value {
+    font-size: 16px;
+  }
+
+  .achievement__item_with-diveder:not(:last-child)::after {
+    height: 80px;
+    bottom: -20px;
+  }
+
+  .info {
+    background: none;
+  }
+
+  .info__block {
+    margin: 0 auto;
+  }
+
+  .offer__plans {
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  .some-plan {
+    align-items: center;
+  }
+
+  .offer__plans-item:not(:last-child) {
+    margin: 0;
+  }
+
+  .offer__plans-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .map__brands {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    margin: 0 30px 65px;
+  }
+
+  .subscribe-card {
+    margin-bottom: 25px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-info {
+    order: 1;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+
+@media (max-width:768px) {
+  .achievement {
+    padding: 55px 40px;
+  }
+
+  .achievement__items {
+    flex-direction: column;
+  }
+
+  .achievement__item_with-diveder:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .achievement__item_with-diveder:not(:last-child)::after {
+    height: 0;
+    width: 80px;
+    left: 50%;
+  }
+
+  .some-plan__main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .some-plan {
+    min-height: 500px;
+  }
+
+  .some-plan__benefits-list {
+    min-width: 150px;
+  }
+
+  .offer__text {
+    margin: 0 30px 60px;
+  }
+
+  .map {
+    padding: 0 10px;
+  }
+
+  .map__text {
+    margin-bottom: 100px;
+  }
+
+  .map__brands-item {
+    margin-bottom: 20px;
+  }
+
+  .feedback__text {
+    margin: 0 30px 60px;
+  }
+
+  .subscribe {
+    padding: 55px 35px;
+  }
+
+  .footer-nav__list {
+    margin-right: 0;
+  }
+}
